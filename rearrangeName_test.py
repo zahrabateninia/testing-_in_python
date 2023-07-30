@@ -15,5 +15,10 @@ class TestRearrange(unittest.TestCase): # inherit form TestCase class
         testcase= ""
         expected= ""
         self.assertEqual(rearrange_name(testcase),expected)
+    
+    def test_double_name(self):
+        testcase = "Bateni, Zahra N."
+        expected = "Zahra N. Bateni"
+        self.assertEqual(rearrange_name(testcase), expected)
 
 unittest.main() # will run the test for us
